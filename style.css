@@ -1,0 +1,51 @@
+.container{
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(4, 25%);
+  gap: 40px;
+}
+
+.blocktext{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: span 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  font-size: 50px;
+  font-weight: "Georgia";
+  text-transform: uppercase;
+}
+
+.button{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  transition: 1s;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+
+.button1{
+  grid-column-start: 4;
+  grid-row-start: 2;
+  background-color: #add8e6;
+}
+
+.button2{
+  grid-column-start: 4;
+  grid-row-start: 3;
+  background-color: lightcoral;
+}
