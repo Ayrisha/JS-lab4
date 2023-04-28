@@ -1,11 +1,12 @@
 function operation(){
-    let x = +document.getElementById("number1").value;
-    let y = +document.getElementById("number2").value;
-
+    let x = document.getElementById("number1").value;
+    let y = document.getElementById("number2").value;
     if (x == '' || y == ''){
         document.getElementById("result").innerHTML = '';
     }
     else{
+        x = parseInt(x);
+        y = parseInt(y);
         if (document.getElementById("select").value == '+'){
             document.getElementById("result").innerHTML = x + y;
         }
